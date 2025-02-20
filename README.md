@@ -1,40 +1,45 @@
-# **Lecture Notes Organizer**  
+# Lecture Notes Organizer
 
-## **Overview**  
-The Lecture Notes Organizer is a Flask-based web application designed to help students digitize and efficiently organize their handwritten lecture notes. It utilizes Tesseract OCR to extract text from images, enabling quick searches across notes and tags. The application features a modern, intuitive interface built with Tailwind CSS and stores all notes locally in a JSON file, ensuring ease of use without requiring a database.  
+A simple web application that helps organize lecture notes by converting images to searchable text using OCR technology.
 
-## **Features**  
-- **OCR-Based Text Extraction:** Converts handwritten notes into searchable text using Tesseract OCR.  
-- **Tagging System:** Allows users to organize notes with custom tags for better categorization.  
-- **Advanced Search:** Enables searching across extracted text and tags for quick content retrieval.  
-- **Minimalist and Lightweight:** No database required; all notes are stored locally in JSON format.  
-- **Modern UI:** Built with Flask and Tailwind CSS for a clean and responsive user experience.  
+## Features
 
-## **Technology Stack**  
-- **Backend:** Flask (Python)  
-- **OCR:** Tesseract OCR  
-- **Frontend:** Tailwind CSS, JavaScript  
-- **Storage:** JSON (local storage)  
+- Upload images of lecture notes
+- Extract text from images using OCR
+- Tag notes for better organization
+- Search through notes using keywords or tags
+- Modern, responsive web interface
 
-## **Installation & Usage**  
-1. Clone the repository:  
-   ```sh
-   git clone https://github.com/yourusername/lecture-notes-organizer.git
-   cd lecture-notes-organizer
-   ```  
-2. Install dependencies:  
-   ```sh
+## Prerequisites
+
+- Python 3.7+
+- Tesseract OCR engine
+- pip (Python package manager)
+
+## Installation
+
+1. Install Tesseract OCR:
+   - Windows: Download and install from https://github.com/UB-Mannheim/tesseract/wiki
+   - Make sure to add Tesseract to your system PATH
+
+2. Install Python dependencies:
+   ```
    pip install -r requirements.txt
-   ```  
-3. Run the application:  
-   ```sh
+   ```
+
+## Usage
+
+1. Start the application:
+   ```
    python app.py
-   ```  
-4. Access the web app at `http://127.0.0.1:5000` in your browser.  
+   ```
 
-## **Future Enhancements**  
-- Cloud-based storage for cross-device access.  
-- Handwriting recognition improvements for better accuracy.  
-- User authentication for personalized note management.  
+2. Open your web browser and navigate to `http://localhost:5000`
 
-This project provides a simple yet effective solution for students looking to digitize and manage their lecture notes effortlessly.
+3. Upload images of your lecture notes and add relevant tags
+
+4. Use the search bar to find notes by content or tags
+
+## Note
+
+Make sure you have proper lighting and clear images for best OCR results.
